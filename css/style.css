@@ -368,9 +368,9 @@
 
 .team-container{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-    gap:35px;
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
 
 /*========================*/
@@ -723,5 +723,1626 @@ body{
         grid-template-columns:1fr;
 
     }
+
+}
+/*======================================
+        ROOMS SECTION
+======================================*/
+
+.trv-room-section{
+
+    width:100%;
+    padding:100px 8%;
+    background:#f5f5f5;
+
+}
+
+.trv-room-title{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.trv-room-title h5{
+
+    color:#0ea36b;
+    font-size:18px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+
+}
+
+.trv-room-title h2{
+
+    font-size:42px;
+    color:#1b2b4b;
+    font-weight:700;
+
+}
+
+.trv-room-container{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+
+}
+
+.trv-room-card{
+
+    width:100%;
+    background:#fff;
+    display:flex;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.trv-room-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.trv-room-image{
+
+    width:42%;
+    overflow:hidden;
+
+}
+
+.trv-room-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+
+}
+
+.trv-room-card:hover .trv-room-image img{
+
+    transform:scale(1.08);
+
+}
+
+.trv-room-info{
+
+    width:58%;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.trv-room-badge{
+
+    width:max-content;
+    background:#0ea36b;
+    color:#fff;
+    padding:7px 18px;
+    border-radius:30px;
+    font-size:13px;
+    margin-bottom:18px;
+
+}
+
+.trv-room-info h3{
+
+    font-size:34px;
+    color:#1b2b4b;
+    margin-bottom:18px;
+
+}
+
+.trv-room-details{
+
+    display:flex;
+    gap:30px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+
+}
+
+.trv-room-details span{
+
+    color:#666;
+    font-size:15px;
+
+}
+
+.trv-room-details i{
+
+    color:#0ea36b;
+    margin-right:8px;
+
+}
+
+.trv-room-info p{
+
+    color:#777;
+    line-height:1.8;
+    margin-bottom:28px;
+
+}
+
+.trv-room-buttons{
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+.trv-room-more{
+
+    border:none;
+    background:#0ea36b;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.trv-room-more:hover{
+
+    background:#098457;
+
+}
+
+.trv-room-book{
+
+    text-decoration:none;
+    border:2px solid #0ea36b;
+    color:#0ea36b;
+    padding:12px 28px;
+    border-radius:40px;
+    transition:.3s;
+    font-size:15px;
+
+}
+
+.trv-room-book:hover{
+
+    background:#0ea36b;
+    color:#fff;
+
+}
+/*======================================
+            ROOM MODAL
+======================================*/
+
+.trv-room-modal{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.65);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:30px;
+
+}
+
+.trv-room-modal-box{
+
+    width:100%;
+    max-width:1150px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    animation:trvModal .4s ease;
+
+}
+
+@keyframes trvModal{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.trv-room-close{
+
+    position:absolute;
+    top:18px;
+    right:22px;
+    font-size:34px;
+    color:#fff;
+    cursor:pointer;
+    z-index:20;
+    transition:.3s;
+
+}
+
+.trv-room-close:hover{
+
+    transform:rotate(90deg);
+
+}
+
+.trv-room-modal-content{
+
+    display:flex;
+    width:100%;
+    min-height:600px;
+
+}
+
+
+/*======================================
+            LEFT IMAGE
+======================================*/
+
+.trv-room-gallery{
+
+    width:50%;
+    background:#ddd;
+    overflow:hidden;
+    position:relative;
+
+}
+
+.trv-room-gallery img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+
+/*======================================
+            RIGHT CONTENT
+======================================*/
+
+.trv-room-description{
+
+    width:50%;
+    padding:55px;
+    overflow-y:auto;
+
+}
+
+.trv-room-description h2{
+
+    font-size:38px;
+    color:#1b2b4b;
+    margin-bottom:25px;
+
+}
+
+.trv-room-modal-icons{
+
+    display:flex;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+
+}
+
+.trv-room-modal-icons span{
+
+    color:#666;
+    font-size:16px;
+
+}
+
+.trv-room-modal-icons i{
+
+    color:#0ea36b;
+    margin-right:8px;
+
+}
+
+.trv-room-description h4{
+
+    font-size:22px;
+    color:#1b2b4b;
+    margin-top:20px;
+    margin-bottom:15px;
+
+}
+
+.trv-room-description p{
+
+    color:#777;
+    line-height:1.9;
+    margin-bottom:20px;
+
+}
+
+.trv-room-description ul{
+
+    list-style:none;
+    padding:0;
+    margin:0 0 35px;
+
+}
+
+.trv-room-description ul li{
+
+    position:relative;
+    padding-left:28px;
+    margin-bottom:14px;
+    color:#666;
+
+}
+
+.trv-room-description ul li::before{
+
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#0ea36b;
+    font-weight:bold;
+
+}
+
+.trv-room-description .trv-room-book{
+
+    display:inline-block;
+    margin-top:15px;
+
+}
+
+
+/*======================================
+        SCROLL MODAL
+======================================*/
+
+.trv-room-description::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.trv-room-description::-webkit-scrollbar-thumb{
+
+    background:#0ea36b;
+    border-radius:20px;
+
+}
+
+.trv-room-description::-webkit-scrollbar-track{
+
+    background:#efefef;
+
+}
+/*======================================
+        RESPONSIVE - TABLET
+======================================*/
+
+@media(max-width:992px){
+
+    .trv-room-card{
+
+        flex-direction:column;
+
+    }
+
+    .trv-room-image{
+
+        width:100%;
+        height:320px;
+
+    }
+
+    .trv-room-info{
+
+        width:100%;
+        padding:35px;
+
+    }
+
+    .trv-room-info h3{
+
+        font-size:30px;
+
+    }
+
+    .trv-room-modal{
+
+        padding:20px;
+
+    }
+
+    .trv-room-modal-box{
+
+        max-width:95%;
+        max-height:90vh;
+        overflow:hidden;
+
+    }
+
+    .trv-room-modal-content{
+
+        flex-direction:column;
+
+    }
+
+    .trv-room-gallery{
+
+        width:100%;
+        height:320px;
+
+    }
+
+    .trv-room-description{
+
+        width:100%;
+        height:calc(90vh - 320px);
+        padding:35px;
+
+    }
+
+}
+
+
+
+/*======================================
+        RESPONSIVE - MOBILE
+======================================*/
+
+@media(max-width:768px){
+
+    .trv-room-section{
+
+        padding:80px 5%;
+
+    }
+
+    .trv-room-title h2{
+
+        font-size:32px;
+
+    }
+
+    .trv-room-title h5{
+
+        font-size:16px;
+
+    }
+
+    .trv-room-info{
+
+        padding:28px;
+
+    }
+
+    .trv-room-info h3{
+
+        font-size:26px;
+
+    }
+
+    .trv-room-details{
+
+        flex-direction:column;
+        gap:12px;
+
+    }
+
+    .trv-room-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .trv-room-buttons a,
+    .trv-room-buttons button{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .trv-room-gallery{
+
+        height:250px;
+
+    }
+
+    .trv-room-description{
+
+        padding:25px;
+
+    }
+
+    .trv-room-description h2{
+
+        font-size:28px;
+
+    }
+
+    .trv-room-description h4{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+
+/*======================================
+        SMALL MOBILE
+======================================*/
+
+@media(max-width:480px){
+
+    .trv-room-title h2{
+
+        font-size:28px;
+
+    }
+
+    .trv-room-info{
+
+        padding:22px;
+
+    }
+
+    .trv-room-info h3{
+
+        font-size:23px;
+
+    }
+
+    .trv-room-badge{
+
+        font-size:12px;
+        padding:6px 15px;
+
+    }
+
+    .trv-room-more{
+
+        padding:13px 18px;
+        font-size:14px;
+
+    }
+
+    .trv-room-book{
+
+        padding:11px 18px;
+        font-size:14px;
+
+    }
+
+    .trv-room-gallery{
+
+        height:220px;
+
+    }
+
+    .trv-room-description{
+
+        padding:20px;
+
+    }
+
+    .trv-room-description h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+
+
+/*======================================
+        EXTRA EFFECTS
+======================================*/
+
+.trv-room-card,
+.trv-room-modal-box,
+.trv-room-more,
+.trv-room-book{
+
+    transition:all .35s ease;
+
+}
+
+.trv-room-more:active{
+
+    transform:scale(.97);
+
+}
+
+.trv-room-book:active{
+
+    transform:scale(.97);
+
+}
+
+.trv-room-card img{
+
+    user-select:none;
+
+}
+
+.trv-room-modal.active{
+
+    display:flex;
+
+}
+
+
+
+
+/*======================================
+        EXPERIENCES
+======================================*/
+
+.exp-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    height:100%;
+}
+
+.exp-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.exp-img{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.exp-img img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+
+}
+
+.exp-card:hover .exp-img img{
+
+    transform:scale(1.08);
+
+}
+.exp-tag{
+
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#86B817;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.5px;
+
+}
+
+.exp-body{
+
+    padding:28px;
+
+}
+
+.exp-body h4{
+
+    font-size:24px;
+    color:#2C3E50;
+    margin-bottom:18px;
+    font-weight:700;
+
+}
+.exp-details{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    font-size:15px;
+    color:#6c757d;
+
+}
+
+.exp-details span i{
+
+    margin-right:6px;
+
+}
+
+.exp-body p{
+
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+    min-height:85px;
+
+}
+
+.exp-btn{
+
+    width:100%;
+    padding:12px;
+    font-weight:600;
+    border-radius:50px;
+
+}
+
+.exp-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+/*======================================
+        EXPERIENCE MODAL
+======================================*/
+
+.exp-modal{
+
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(8px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:99999;
+
+}
+
+.exp-modal.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+.exp-modal-box{
+
+    width:90%;
+    max-width:1100px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    position:relative;
+
+    transform:translateY(50px);
+
+    transition:.4s;
+
+}
+
+.exp-modal.active .exp-modal-box{
+
+    transform:translateY(0);
+
+}
+.exp-close{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+
+    width:45px;
+
+    height:45px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    z-index:10;
+
+    transition:.3s;
+
+}
+
+.exp-close:hover{
+
+    background:#86B817;
+
+    color:#fff;
+
+}
+.exp-modal-img img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.exp-modal-content{
+
+    padding:45px;
+
+}
+
+.exp-modal-content h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin:20px 0;
+
+}
+.exp-modal-info{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+    color:#777;
+
+}
+
+.exp-modal-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.exp-modal-info i{
+
+    color:#86B817;
+
+}
+.exp-modal-tag{
+
+    background:#86B817;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.exp-modal-content p{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.exp-modal-content ul{
+
+    padding-left:20px;
+
+    margin:25px 0;
+
+}
+
+.exp-modal-content li{
+
+    margin-bottom:12px;
+
+}
+@media(max-width:991px){
+
+    .exp-modal-box{
+
+        grid-template-columns:1fr;
+
+        max-height:90vh;
+
+        overflow-y:auto;
+
+    }
+
+    .exp-modal-img img{
+
+        height:320px;
+
+    }
+
+}
+.exp-modal-img{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.exp-modal-img img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+
+.img-btn{
+
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    z-index:2;
+
+}
+
+
+#prevImg{
+    left:15px;
+}
+
+
+#nextImg{
+    right:15px;
+}
+/*==========================================
+                GALLERY
+==========================================*/
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    cursor:pointer;
+    height:280px;
+}
+
+.gallery-item img,
+.gallery-item video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video{
+    transform:scale(1.08);
+}
+
+.gallery-item::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.25);
+    opacity:0;
+    transition:.4s;
+}
+
+.gallery-item:hover::before{
+    opacity:1;
+}
+
+.play-icon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,255,255,.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    color:#0d6efd;
+}
+
+/*==========================================
+            MODAL GALLERY
+==========================================*/
+
+.gallery-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.gallery-modal.active{
+    display:flex;
+}
+
+.gallery-content{
+    width:75%;
+    max-width:1100px;
+}
+
+.gallery-content img,
+.gallery-content video{
+    width:100%;
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:12px;
+}
+
+/*==========================================
+                BUTTONS
+==========================================*/
+
+.gallery-prev,
+.gallery-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-prev:hover,
+.gallery-next:hover{
+    transform:translateY(-50%) scale(1.2);
+}
+
+.gallery-prev{
+    left:40px;
+}
+
+.gallery-next{
+    right:40px;
+}
+
+.gallery-close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:#fff;
+    font-size:38px;
+    cursor:pointer;
+    z-index:100000;
+}
+
+.gallery-close:hover{
+    color:#0d6efd;
+}
+
+/*==========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:768px){
+
+.gallery-content{
+    width:92%;
+}
+
+.gallery-prev{
+    left:10px;
+    font-size:30px;
+}
+
+.gallery-next{
+    right:10px;
+    font-size:30px;
+}
+
+.gallery-close{
+    right:20px;
+    font-size:30px;
+}
+
+.gallery-item{
+    height:220px;
+}
+
+}
+/*==========================================
+        GALLERY ANIMATION
+==========================================*/
+
+.gallery-content img,
+.gallery-content video{
+
+    opacity:0;
+    transform:scale(.92);
+    transition:.35s ease;
+
+}
+
+.gallery-content img.show,
+.gallery-content video.show{
+
+    opacity:1;
+    transform:scale(1);
+
+}
+.gallery-counter{
+
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:rgba(0,0,0,.6);
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+.gallery-thumbs{
+
+    position:absolute;
+
+    bottom:65px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:10px;
+
+    overflow-x:auto;
+
+    max-width:85%;
+
+    padding:5px;
+
+}
+
+.gallery-thumbs img{
+
+    width:70px;
+
+    height:50px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    opacity:.6;
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+.gallery-thumbs img:hover{
+
+    opacity:1;
+
+}
+
+
+.gallery-thumbs img.active{
+
+    opacity:1;
+    border:3px solid #86B817;
+    transform:scale(1.08);
+
+}
+/*=========================
+      POPUP CONTACTO
+=========================*/
+
+.popup-mensaje{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+    z-index:999999;
+
+}
+
+.popup-mensaje.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.popup-contenido{
+
+    background:#fff;
+    width:90%;
+    max-width:420px;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    animation:popup .35s ease;
+
+}
+
+.popup-contenido i{
+
+    font-size:65px;
+    color:#86B817;
+    margin-bottom:20px;
+
+}
+
+.popup-contenido h3{
+
+    color:#1b2b4b;
+    margin-bottom:15px;
+
+}
+
+.popup-contenido p{
+
+    color:#666;
+    margin-bottom:25px;
+    line-height:1.7;
+
+}
+
+.popup-contenido button{
+
+    border:none;
+    background:#86B817;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:40px;
+    cursor:pointer;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.8);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
+/*=========================================
+            TESTIMONIOS
+==========================================*/
+
+.testimonials-section{
+
+    background:#f8f9fa;
+
+}
+
+.testimonial-card{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.testimonial-img{
+
+    width:170px;
+
+    height:170px;
+
+    flex-shrink:0;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.testimonial-img img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.testimonial-content{
+
+    flex:1;
+
+}
+
+.testimonial-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+.testimonial-top h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    color:#1b2b4b;
+
+    font-weight:700;
+
+}
+
+.testimonial-top span{
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+.testimonial-stars{
+
+    color:#86B817;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+}
+
+.testimonial-card hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#e5e5e5;
+
+    margin:18px 0;
+
+}
+
+.testimonial-text{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin:0;
+
+    font-style:italic;
+
+}
+
+.testimonial-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+.testimonial-bottom strong{
+
+    color:#1b2b4b;
+
+}
+
+@media(max-width:768px){
+
+.testimonial-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.testimonial-top{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.testimonial-bottom{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.testimonial-img{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+}
+.testimonial-controls{
+
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-bottom:25px;
+
+}
+
+.testimonial-prev,
+.testimonial-next{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#86B817;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover{
+
+    background:#6f9914;
+    transform:scale(1.08);
+
+}
+.home-hero{
+
+    background:
+    linear-gradient(rgba(20,20,31,.7),rgba(20,20,31,.7)),
+    url("../img/medellin.jpg");
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
 
 }

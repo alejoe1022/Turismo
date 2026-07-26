@@ -41,3 +41,35 @@
     
 })(jQuery);
 
+const popup = document.getElementById("mensajeEnviado");
+const cerrarPopup = document.getElementById("cerrarPopup");
+
+document.querySelectorAll(".contact-btn").forEach(btn=>{
+
+    btn.addEventListener("click",function(e){
+
+        e.preventDefault();
+
+        popup.classList.add("active");
+
+    });
+
+});
+
+cerrarPopup.addEventListener("click",()=>{
+
+    popup.classList.remove("active");
+
+});
+
+popup.addEventListener("click",(e)=>{
+
+    if(e.target===popup){
+
+        popup.classList.remove("active");
+
+    }
+
+});
+
+
