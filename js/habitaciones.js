@@ -148,7 +148,63 @@ guatape:{
         time:"3 Horas",
         tag:"Aventura",
         description:"Vive una experiencia cafetera completa con visita a una finca tradicional, recolección de café, degustación, preparación artesanal y un acercamiento a la cultura cafetera de Antioquia."
+    },
+
+
+
+        alejo:{
+
+        title:"Comuna 13 Experience",
+
+        images:[
+            "img/alejo2.jpg",
+            "img/alejo3.jpg",
+            "img/alejo4.jpg"
+        ],
+
+        people:"8 Personas",
+        time:"4 Horas",
+        tag:"Crecimiento",
+        description:"Vive una experiencia única en la Comuna 13 recorriendo sus coloridos murales, escaleras eléctricas, galerías de arte urbano, espectáculos culturales y descubriendo la historia que transformó este emblemático lugar de Medellín."
+    },
+
+
+          sofia:{
+
+        title:"Culture  and History Experience",
+
+        images:[
+            "img/sofia2.jpg",
+            "img/sofia3.jpg",
+            "img/sofia4.jpg"
+        ],
+
+        people:"6 Personas",
+        time:"7 Horas",
+        tag:"Cultura",
+        description:"Vive un recorrido cultural por Medellín que incluye la Plaza Botero, el Centro Histórico, un viaje en Metrocable con vistas panorámicas y una inmersión en el arte urbano, descubriendo la historia, identidad y transformación de la ciudad."
+    },
+
+
+          nico:{
+
+        title:"Custome Experience",
+
+        images:[
+            "img/nico2.jpg",
+            "img/nico3.jpg",
+            "img/nico4.jpg"
+        ],
+
+        people:"2 Personas",
+        time:"4 Horas",
+        tag:"Pareja",
+        description:"Crea un plan personalizado eligiendo entre actividades culturales, gastronómicas, de aventura, naturaleza, vida nocturna, compras, pueblos cercanos y experiencias exclusivas, adaptadas a tus gustos, tiempo y presupuesto."
     }
+
+
+
+
 
 
 
