@@ -14,7 +14,7 @@ guatape:{
 
         people:"6 Personas",
         time:"8 Horas",
-        tag:"Mas vendido",
+        tag:"Best seller’s experiences",
         description:"Disfruta una experiencia premium en Guatapé con aventura y exclusividad: visita la Piedra del Peñol, navega en yate privado, vive actividades acuáticas, disfruta un almuerzo gourmet, champagne y captura cada momento con fotógrafo profesional.."
     },
 
@@ -31,7 +31,7 @@ guatape:{
 
         people:"6 Personas",
         time:"5 Horas",
-        tag:"Popular",
+        tag:"Best seller’s experiences",
         description:"Vive una noche inolvidable en Medellín recorriendo sus mejores miradores, rooftops y zonas gastronómicas con transporte privado, disfrutando de la ciudad desde una perspectiva exclusiva."
     },
 
@@ -198,7 +198,7 @@ guatape:{
 
         people:"2 Personas",
         time:"4 Horas",
-        tag:"Pareja",
+        tag:"Best seller’s experiences",
         description:"Crea un plan personalizado eligiendo entre actividades culturales, gastronómicas, de aventura, naturaleza, vida nocturna, compras, pueblos cercanos y experiencias exclusivas, adaptadas a tus gustos, tiempo y presupuesto."
     }
 
